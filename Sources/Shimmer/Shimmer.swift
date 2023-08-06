@@ -60,8 +60,8 @@ public struct Shimmer: ViewModifier {
     /// The `phase` parameter shifts the gradient, moving the opaque band.
     struct GradientMask: View {
         let phase: CGFloat
-        let centerColor = Color.black
-        let edgeColor = Color.black.opacity(0.3)
+        let centerColor = Color.clear
+        let edgeColor = Color.clear
         @Environment(\.layoutDirection) private var layoutDirection
 
         var body: some View {
